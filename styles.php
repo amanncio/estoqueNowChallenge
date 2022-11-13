@@ -1,7 +1,8 @@
 <style>
-    .navbar-expand-lg {
-        background-color: tomato !important;
-    }
+    /* CORES PARA USAR NO DESIGN 
+        Verde #00C850
+        Roxo para :hover #A004DC
+    */
 
     .container {
         display: flex;
@@ -12,12 +13,13 @@
     }
 
     .central-content {
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: lightblue;
-        width: 500px;
+        width: 1200px;
         height: 500px;
         padding: 20px;
         border: 1px solid #ccc;
@@ -26,11 +28,14 @@
 
     .required {
         color: red;
-        margin-left: 2px;
+        margin-left: 3px;
     }
 
-    .input-required {
-        display: flex;   
-        align-items: center;                       
+    .navbar-brand {
+        color: #F8F8F8 !important;
+    }
+
+    .nav-link {
+        color: #F8F8F8 !important;
     }
 </style>

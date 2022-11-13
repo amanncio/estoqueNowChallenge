@@ -1,4 +1,5 @@
-
-<?php include("header.php") ?>
-        <h2>Bem vindo!</h2>
-<?php include("footer.php") ?>
+<?php include("header.php"); ?>
+        <div class="container">
+                <h2>Bem vindo!</h2>
+        </div>
+<?php include("footer.php"); ?>
