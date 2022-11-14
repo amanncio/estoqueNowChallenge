@@ -13,14 +13,12 @@
     }
 
     .central-content {
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: lightblue;
-        width: 1200px;
-        height: 500px;
+        width:650px;
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 4px;
@@ -38,4 +36,13 @@
     .nav-link {
         color: #F8F8F8 !important;
     }
+
+    .view-table {
+
+    }
+
+    .discount-select {
+        width:135px !important;     
+    }
+
 </style>
