@@ -37,12 +37,8 @@
         color: #F8F8F8 !important;
     }
 
-    .view-table {
-
+    #discountSelect {
+        width: 133px;
+        height: 31px;
     }
-
-    .discount-select {
-        width:135px !important;     
-    }
-
 </style>
