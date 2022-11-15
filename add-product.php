@@ -5,11 +5,9 @@
         $name = "";
         $amount = 1;
         $price = 0.00;
-        // $amount = $_POST['amount'];
-        // $price = $_POST['price'];
 
         //Inicializando variáveis da Validação de campos obrigatórios
-        $nameError = $amountError = $priceError= "";
+        $nameError = $amountError = $priceError= $nameError = $amountError = $priceError = "";
 
         //VALIDAÇÕES
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -18,21 +16,31 @@
             $price = doubleval($_POST['price']);
 
             //VALIDAÇÃO DO REQUIRED + APLICAÇÃO DA FUNÇÃO test_input
+            //Valida NAME
             if (empty($name)) {
                 $nameError = "Obrigatório";
+            } else if (is_numeric($name)) {
+                $nameError = "Este campo não aceita números.";        
             } else {
                 $name = test_input($name);
             }
 
+            //Valida AMOUNT
             if (empty($amount)) {
                 $amountError = "Obrigatório";
+            }
+            else if($amount < 0) {
+                $amountError = "Digite um valor positivo!";
             } else {
                 $amount = test_input($amount);
             }
 
+            //Valida PRICE
             if (empty($price)) {
                 $priceError = "Obrigatório";
-            } else {
+            } else if($price < 0) {
+                $priceError = "Digite um valor positivo!";
+            }else {
                 $price = doubleval(test_input($price));
             }
 
@@ -43,7 +51,7 @@
                         <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                     </div>
                 ";
-            } else {
+            } else if (!is_numeric($name) && ($price >= 0) && ($amount >= 0)) {
                 echo"
                     <div class='alert alert-success alert-dismissible fade show' role='alert'>
                         O produto " . $name . " foi adicionado com sucesso!

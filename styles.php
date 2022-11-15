@@ -41,4 +41,9 @@
         width: 133px;
         height: 31px;
     }
+
+    .btn-keep-buying {
+        max-width: 200px;
+        height:40px;
+    }
 </style>

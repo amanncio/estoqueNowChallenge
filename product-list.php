@@ -8,8 +8,9 @@
 <div class="container">
     <div class="central-content">
         <div class="view-table">
-            <div class="mb-4">
+            <div class="mb-4 d-flex justify-content-space-between">
                 <h2>Lista de Produtos</h2>
+                <a href="add-product.php" class="btn btn-primary btn-keep-buying">Continuar comprando</a>
             </div>
             <table class="table">
                 <thead>
@@ -52,7 +53,7 @@
                         */
 
                         //ADICIONANDO DADOS A TABELA UTILIZANDO WHILE E FETCH ASSOC
-                        $row = $result->fetch_assoc();
+                        // $row = $result->fetch_assoc();
                         $totalPrice = 0;
                         
                         while($row = $result->fetch_assoc()) {
@@ -110,7 +111,7 @@
 
             <!-- Formulário do discountSelect -->
             <form class="mt-4" action="" method="POST">
-                <div class=" mb-5">
+                <div class="mb-5 d-flex flex-column">
                     <span><strong class="mb-2">Valor total em reais: </strong> R$<?=number_format($totalPrice, 2, ',', '.');?></span>
                 </div>
                 <div class="discount-div d-flex gap-2 mb-2">
