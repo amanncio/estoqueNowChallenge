@@ -2,12 +2,13 @@
     /* CORES PARA USAR NO DESIGN 
         Verde #00C850
         Roxo para :hover #A004DC
+        Roxo Pricipal #72127C
     */
 
     .container {
         display: flex;
         justify-content: center;
-        /* background-color: green; */
+        background-color: green;
         min-height: 100vh;
         align-items: center;
     }
@@ -28,15 +29,7 @@
         color: red;
         margin-left: 3px;
     }
-
-    .navbar-brand {
-        color: #F8F8F8 !important;
-    }
-
-    .nav-link {
-        color: #F8F8F8 !important;
-    }
-
+    
     #discountSelect {
         width: 133px;
         height: 31px;
@@ -45,5 +38,20 @@
     .btn-keep-buying {
         max-width: 200px;
         height:40px;
+    }
+
+    /* NAVBAR */
+    .navbar-toggler-icon {
+        font-size: 15px !important;
+    }
+
+    .nav-link {
+        font-size: 14px !important;
+        margin-left: 15px;
+    }
+
+    .navbar-container{
+        margin: 0 auto !important;
+        max-width: 1200px;
     }
 </style>
