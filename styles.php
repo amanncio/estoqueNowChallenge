@@ -47,11 +47,11 @@
         background-color: #3f4055d7;
         /* border: 1px solid #000; */
         border-radius: 8px;
-        padding: 15px;
+        padding: 25px 0;
     }
 
     .view-table {
-        padding: 20px 100px;
+        padding: 35px 90px;
     }
 
     .btn-keep-buying {
