@@ -1,9 +1,9 @@
 <style>
-    /* CORES PARA USAR NO DESIGN 
-        Verde #00C850
-        Roxo para :hover #A004DC
-        Roxo Pricipal #72127C
-    */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
     body {
         background-color: #7D83A5!important;
@@ -12,7 +12,6 @@
     h2 {
         color: #f8f8f8;
     }
-
 
     .container {
         display: flex;
@@ -33,10 +32,6 @@
     }
     td, tr{
         color:#f8f8f8cb
-    }
-
-    .btn-success {
-        /* background-color: #00C850 !important; */
     }
 
     .central-content-list {
@@ -99,7 +94,9 @@
         margin: 0 auto !important;
         padding: 5px 50px !important;
     }
-
+    /* FIM NAVBAR */
+    
+    /* INDEX */
     .container-index {
         background-color: #72127C;
         border-radius: 10px;
@@ -108,6 +105,76 @@
     .container-index p {
         color: #f8f8f8;
     }
+    /* FIM INDEX */
+
+    /* FOOTER */
+    footer {
+        background-color: #F1F2F2;
+    }
+
+    .container-footer {
+        /* max-width: 1200px; */
+        padding: 80px 0;
+    }
+
+    .row-footer {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+    }
+
+    .col-footer h4 {
+        font-size: 17px;
+    }
+
+    .col-footer ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .col-footer ul li {
+        margin: 7px 0;
+    }
+
+    .col-footer ul li a {
+        text-decoration: none;
+        color: #8A05BE
+    }
+
+    .col-footer ul li a:hover {
+        text-decoration: underline;
+        color: #2E629D;
+    }
+
+    .row-footer-secondary {
+        background-color: #2CCBB7;
+        padding: 60px 0;
+        text-align: center;
+        bottom: 0;
+        position: absolut;
+        width: 100%;
+    }
+
+    .row-footer-secondary div a {
+        margin: 0 10px;
+    }
+
+    .row-footer-secondary p {
+        color: #313333;
+    }
+
+    .row-footer-secondary a {
+        color: #f8f8f8;
+        text-decoration: none
+    }
+
+    .row-footer-secondary a:hover{
+        text-decoration: underline;
+        color: #f8f8f8;
+    }
+
+
+    /* FIM FOOTER */
 
     /* RESPONSIVIDADE PRODUCT LIST */
     @media(max-width: 625px) {
@@ -120,18 +187,10 @@
         }
     }
 
-    @media(max-width: 468px) {
-        /* .central-content-list {
-            width: 430px;
-        }
-
-        .btn-keep-buying {
-            margin-left: 276px;
-        } */
-        
-        .btn-danger {
-            /* display: block !important; */
+    /* RESPONSIVIDADE NAVBAR */
+    @media(max-width:991px) {
+        .navbar-container{
+            padding: 5px 0px !important;
         }
     }
-
 </style>

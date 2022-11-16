@@ -19,7 +19,7 @@
                     <tr>
                         <th scope="col">Produto</th>
                         <th scope="col">Quantidade</th>
-                        <th scope="col">Preço Un.</th>
+                        <th scope="col">Preço (un.)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,7 +35,7 @@
                         }
                         
                         /*
-                        ADICIONANDO DADOS A TABELA UTILIZANDO FOREACH
+                        ADICIONANDO DADOS A TABELA UTILIZANDO FOREACH CASO SEJA UMA MELHOR FORMA PARA TROCAR FUTURAMENTE
                         if(mysqli_num_rows($result) > 0) {
                             foreach($result as $product) {
                                 echo "
@@ -53,6 +53,7 @@
                             echo "<h4>Sem dados</h4>";
                         }
                         */
+                        
 
                         //ADICIONANDO DADOS A TABELA UTILIZANDO WHILE E FETCH ASSOC
                         // $row = $result->fetch_assoc();
