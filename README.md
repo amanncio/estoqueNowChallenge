@@ -25,7 +25,8 @@ Repeat Password: root;
 
 -PHP: 8.1.6  
 -MySQL: 2.18.1  
--Xammp: 3.3.0
+-Xammp: 3.3.0  
+-Bootstrap: 5.2  
 
 ### `OBS:`
 
