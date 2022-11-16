@@ -5,29 +5,67 @@
         Roxo Pricipal #72127C
     */
 
+    body {
+        background-color: #7D83A5!important;
+    }
+
+    h2 {
+        color: #f8f8f8;
+    }
+
+
     .container {
         display: flex;
         justify-content: center;
-        background-color: green;
         min-height: 100vh;
         align-items: center;
+        padding: 50px;
     }
 
-    .central-content {
+    .central-content-add {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: lightblue;
-        width:650px;
-        padding: 20px;
-        border: 1px solid #ccc;
+        background-color: #3f4055d7;
+        padding: 65px;
         border-radius: 4px;
+    }
+    td, tr{
+        color:#f8f8f8cb
+    }
+
+    .btn-success {
+        /* background-color: #00C850 !important; */
+    }
+
+    .central-content-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #3f4055d7;
+        /* border: 1px solid #000; */
+        border-radius: 8px;
+        padding: 15px;
+    }
+
+    .view-table {
+        padding: 20px 100px;
+    }
+
+    .btn-keep-buying {
+        margin-left: 450px;
+    }
+
+    label {
+        color: #f8f8f8 !important;
     }
 
     .required {
         color: red;
         margin-left: 3px;
+        color:
     }
     
     #discountSelect {
@@ -35,9 +73,16 @@
         height: 31px;
     }
 
-    .btn-keep-buying {
-        max-width: 200px;
-        height:40px;
+    .btn-set-discount {
+        padding: 0 10px !important;
+    }
+
+    .total-values {
+        color: #f8f8f8cb;
+    }
+
+    .span-total-values {
+        color: yellow;
     }
 
     /* NAVBAR */
@@ -52,6 +97,41 @@
 
     .navbar-container{
         margin: 0 auto !important;
-        max-width: 1200px;
+        padding: 5px 50px !important;
     }
+
+    .container-index {
+        background-color: #72127C;
+        border-radius: 10px;
+    }
+
+    .container-index p {
+        color: #f8f8f8;
+    }
+
+    /* RESPONSIVIDADE PRODUCT LIST */
+    @media(max-width: 625px) {
+        .central-content-list {
+            width: 430px;
+        }
+
+        .btn-keep-buying {
+            margin-left: 276px;
+        }
+    }
+
+    @media(max-width: 468px) {
+        /* .central-content-list {
+            width: 430px;
+        }
+
+        .btn-keep-buying {
+            margin-left: 276px;
+        } */
+        
+        .btn-danger {
+            /* display: block !important; */
+        }
+    }
+
 </style>

@@ -6,18 +6,20 @@
 <?php deleteProduct(); ?> 
 
 <div class="container">
-    <div class="central-content">
+    <div class="central-content-list">
+        <div class="btn-keep-buying">
+            <a href="add-product.php" class="btn btn-primary">Add +</a>
+        </div>
         <div class="view-table">
             <div class="mb-4 d-flex justify-content-space-between">
                 <h2>Lista de Produtos</h2>
-                <a href="add-product.php" class="btn btn-primary btn-keep-buying">Continuar comprando</a>
             </div>
             <table class="table">
                 <thead>
                     <tr>
                         <th scope="col">Produto</th>
                         <th scope="col">Quantidade</th>
-                        <th scope="col">Preço</th>
+                        <th scope="col">Preço Un.</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -112,7 +114,7 @@
             <!-- Formulário do discountSelect -->
             <form class="mt-4" action="" method="POST">
                 <div class="mb-5 d-flex flex-column">
-                    <span><strong class="mb-2">Valor total em reais: </strong> R$<?=number_format($totalPrice, 2, ',', '.');?></span>
+                    <span class="span-total-values"><strong class="mb-2 total-values">Valor total em reais: </strong> R$<?=number_format($totalPrice, 2, ',', '.');?></span>
                 </div>
                 <div class="discount-div d-flex gap-2 mb-2">
                     <label for="discountSelect"><strong>Desconto:</strong></label>
@@ -126,10 +128,10 @@
                         <option value='30'>30%</option>
                         <option value='50'>50%</option>
                     </select>
-                    <input class="btn btn-primary" type="submit" value="Aplicar desconto">
+                    <input class="btn btn-success btn-set-discount" type="submit" value="Aplicar desconto">
                 </div>
-                <div class="total-values">
-                    <span><strong class="mb-2">Valor total em centavos: </strong><?=intval($totalInCents)?></span>
+                <div class="total-value">
+                    <span class="span-total-values"><strong class="mb-2 total-values">Valor total em centavos: </strong><?=intval($totalInCents)?></span>
                 </div>
             </form>
             <!-- /Formulário do discountSelect -->

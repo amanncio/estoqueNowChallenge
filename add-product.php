@@ -34,7 +34,7 @@
             } else {
                 $amount = test_input($amount);
             }
-
+            
             //Valida PRICE
             if (empty($price)) {
                 $priceError = "Obrigatório";
@@ -80,7 +80,7 @@
     ?>
     
     <div class="container">
-        <div class="central-content">
+        <div class="central-content-add">
             <div class="mb-4">
                 <h2>Pedido de venda</h2>
             </div>
